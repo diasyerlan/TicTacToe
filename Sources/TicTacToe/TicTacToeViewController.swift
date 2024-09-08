@@ -21,15 +21,15 @@ public class TicTacToeViewController: UIViewController {
 //        return label
 //    }()
     
-    @IBOutlet weak var a1: UIButton!
-    @IBOutlet weak var a2: UIButton!
-    @IBOutlet weak var a3: UIButton!
-    @IBOutlet weak var b1: UIButton!
-    @IBOutlet weak var b2: UIButton!
-    @IBOutlet weak var b3: UIButton!
-    @IBOutlet weak var c1: UIButton!
-    @IBOutlet weak var c2: UIButton!
-    @IBOutlet weak var c3: UIButton!
+    @IBOutlet public weak var a1: UIButton!
+    @IBOutlet public weak var a2: UIButton!
+    @IBOutlet public weak var a3: UIButton!
+    @IBOutlet public weak var b1: UIButton!
+    @IBOutlet public weak var b2: UIButton!
+    @IBOutlet public weak var b3: UIButton!
+    @IBOutlet public weak var c1: UIButton!
+    @IBOutlet public weak var c2: UIButton!
+    @IBOutlet public weak var c3: UIButton!
     
     var firstTurn = Turn.Cross
     var currentTurn = Turn.Cross
@@ -60,7 +60,7 @@ public class TicTacToeViewController: UIViewController {
     }
     
     
-    @IBAction func boardTapAction(_ sender: UIButton) {
+    @IBAction public func boardTapAction(_ sender: UIButton) {
         addToBoard(sender)
         
         if checkForVictory(CROSS) {

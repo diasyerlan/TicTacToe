@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+public extension Bundle {
+    static var currentCityBundle: Bundle {
+        return Bundle.module
+    }
+}
